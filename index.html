@@ -14,14 +14,22 @@
             {title ? title : "Hello World"}
         </h1>;
       }
+
+
        
       function HomePage() {
+        const names = ['John', 'Jane', 'Jack'];
         return (
           <div>
             {/* Nesting the Header component */}
-            <Header />
+        
             <Header title = "React" />
-            <Header title="Next" />
+            
+            <ul>
+                {names.map((name) => (
+                    <li>{name}</li>
+                    ))}
+                </ul>
           </div>
         );
       }
