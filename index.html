@@ -8,9 +8,9 @@
     <script type="text/jsx">
       const app = document.getElementById('app');
         
-      function Header(props) {
+      function Header({ title}) {
         return <h1> 
-            {props.title}
+            {`Cool ${title} `}
         </h1>;
       }
        
